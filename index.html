@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main id="container">
+    <!--Profile-->
+    <section id="sectionProfile">
+      <div id="firstPart">
+        <img src="images/image-jeremy.png" alt="Jeremy image" id="profileImage">
+
+        <div id="info">
+          <p id="report">Report for</p>
+          <p id="name">Jeremy Robson</p>
+        </div>
+      </div>
+
+      <div id="secondPart">
+        <button type="button" id="daily" class="buttonChangeMode">Daily</button>
+        <button type="button" id="weekly" class="buttonChangeMode">Weekly</button>
+        <button type="button" id="monthly" class="buttonChangeMode">Monthly</button>
+      </div>
+    </section>
+    
+    <!--Main content-->
+    <section id="mainContent">
+      <!--Row one-->
+      <div id="rowOne">
+        <div class="card" id="work">
+          <div class="imageCard" id="workImg"></div>
+          <div class="textCards" id="workText">
+            <div class="ATV-BUTTON">
+              <p class="ATV" id="workATV"></p>
+              <button type="button" class="buttonMore">
+                <img src="images/icon-ellipsis.svg" alt="more">
+              </button>
+            </div>
+            <div class="hours">
+              <p class="currentTime" id="currentTimeWork"></p>
+              <p class="lastDWM"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="play">
+          <div class="imageCard" id="playImg"></div>
+          <div class="textCards" id="playText">
+            <div class="ATV-BUTTON">
+              <p class="ATV" id="playATV">Play</p>
+              <button type="button" class="buttonMore">
+                <img src="images/icon-ellipsis.svg" alt="more">
+              </button>
+            </div>
+            <div class="hours">
+              <p class="currentTime" id="currentTimePlay"></p>
+              <p class="lastDWM"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="study">
+          <div class="imageCard" id="studyImg"></div>
+          <div class="textCards" id="studyText">
+            <div class="ATV-BUTTON">
+              <p class="ATV" id="studyATV">Study</p>
+              <button type="button" class="buttonMore">
+                <img src="images/icon-ellipsis.svg" alt="more">
+              </button>
+            </div>
+            <div class="hours">
+              <p class="currentTime" id="currentTimeStudy"></p>
+              <p class="lastDWM"></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--Row two-->
+      <div id="rowTwo">
+        <div class="card" id="exercise">
+          <div class="imageCard" id="exerciseImg"></div>
+          <div class="textCards" id="exerciseText">
+            <div class="ATV-BUTTON">
+              <p class="ATV" id="exerciseATV">Exercise</p>
+              <button type="button" class="buttonMore">
+                <img src="images/icon-ellipsis.svg" alt="more">
+              </button>
+            </div>
+            <div class="hours">
+              <p class="currentTime" id="currentTimeExercise"></p>
+              <p class="lastDWM"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="social">
+          <div class="imageCard" id="socialImg"></div>
+          <div class="textCards" id="socialText">
+            <div class="ATV-BUTTON">
+              <p class="ATV" id="socialATV">Social</p>
+              <button type="button" class="buttonMore">
+                <img src="images/icon-ellipsis.svg" alt="more">
+              </button>
+            </div>
+            <div class="hours">
+              <p class="currentTime" id="currentTimeSocial"></p>
+              <p class="lastDWM"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="selfCare">
+          <div class="imageCard" id="selfCareImg"></div>
+          <div class="textCards" id="selfCareText">
+            <div class="ATV-BUTTON">
+              <p class="ATV" id="selfCareATV">Self Care</p>
+              <button type="button" class="buttonMore">
+                <img src="images/icon-ellipsis.svg" alt="more">
+              </button>
+            </div>
+            <div class="hours">
+              <p class="currentTime" id="currentTimeSelfCare"></p>
+              <p class="lastDWM"></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

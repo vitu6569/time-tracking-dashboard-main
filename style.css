@@ -1,0 +1,188 @@
+:root {
+    /*### Primary*/
+
+    --Blue: hsl(246, 80%, 60%);
+    
+    --Light-red-work-: hsl(15, 100%, 70%);
+    --Soft-blue-play-: hsl(195, 74%, 62%);
+    --Light-red-study-: hsl(348, 100%, 68%);
+    --Lime-green-exercise-: hsl(145, 58%, 55%);
+    --Violet-social-: hsl(264, 64%, 52%);
+    --Soft-orange-self-car: hsl(43, 84%, 65%);
+    
+    /*### Neutral*/
+    
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+    
+    --Font-size: 18px; /*(card titles e.g. Work, Play)*/
+    
+    --font-family: 'Rubik', sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+    margin: 0;
+    padding: 0;
+}
+button {
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin: 7rem;
+}
+
+#sectionProfile {
+    display: grid;
+    background-color: var(--Dark-blue);
+    width: 245px;
+    height: 500px;
+    border-radius: 20px;
+}
+#firstPart {
+    display: grid;
+    grid-template-rows: 100px;
+    padding: 28px;
+    background-color: var(--Blue);
+    border-radius: 15px;
+    height: 260px;
+}
+#profileImage {
+    width: 64px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#report {
+    font-size: 14px;
+    color: var(--Pale-Blue);
+    margin: 0;
+}
+#name {
+    color: white;
+    font-size: 34px;
+    margin: 0;
+}
+
+
+#secondPart {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    padding: 28px;
+}
+.buttonChangeMode {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    transition: ease 0.25S;
+}
+.buttonChangeMode:hover, .buttonChangeMode:focus {
+    color: white;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.card {
+    display: grid;
+    grid-template-rows: 50px;
+    width: 240px;
+}
+.textCards {
+    background-color: var(--Dark-blue);
+    padding: 32px;
+    border-radius: 10px;
+    height: 120px;
+}
+.ATV-BUTTON {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: var(--Font-size);
+}
+.buttonMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+
+#rowOne {
+    display: flex;
+    gap: 32px;
+    margin: 0;
+}
+#work {
+    background-color: var(--Light-red-work-);
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 105% right 10%;
+    background-size: 30%;
+    border-radius: 15px;
+}
+#play {
+    background-color: var(--Soft-blue-play-);
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 105% right 10%;
+    background-size: 30%;
+    border-radius: 15px;
+}
+#study {
+    background-color: var(--Light-red-study-);
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 105% right 10%;
+    background-size: 30%;
+    border-radius: 15px;
+}
+
+#rowTwo {
+    display: flex;
+    gap: 32px;
+    margin: 0;
+}
+#exercise {
+    background-color: var(--Lime-green-exercise-);
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 100% right 10%;
+    border-radius: 15px;
+}
+#social {
+    background-color: var(--Violet-social-);
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 105% right 10%;
+    background-size: 30%;
+    border-radius: 15px;
+}
+#selfCare {
+    background-color: var(--Soft-orange-self-car);
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 105% right 10%;
+    background-size: 25%;
+    border-radius: 15px;
+}

@@ -127,7 +127,6 @@ button {
     background: none;
     border: none;
 }
-
 #rowOne {
     display: flex;
     gap: 32px;
@@ -138,7 +137,6 @@ button {
     background-image: url(images/icon-work.svg);
     background-repeat: no-repeat;
     background-position: bottom 105% right 10%;
-    background-size: 30%;
     border-radius: 15px;
 }
 #play {
@@ -185,4 +183,94 @@ button {
     background-position: bottom 105% right 10%;
     background-size: 25%;
     border-radius: 15px;
+}
+
+@media (max-width: 375px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        margin: 2.25rem;
+        animation-name: dropdown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    #sectionProfile {
+        display: grid;
+        grid-template-rows: 135px;
+        background-color: var(--Dark-blue);
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    #firstPart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+        background-color: var(--Blue);
+        border-radius: 15px;
+        height: 100px;
+    }
+    #profileImage {
+        width: 64px;
+        height: 64px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+    #info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    #report {
+        font-size: 14px;
+        color: var(--Pale-Blue);
+        margin: 0;
+    }
+    #name {
+        color: white;
+        font-size: 24px;
+        margin: 0;
+    }
+    #secondPart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 28px;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-rows: 50px;
+        width: 300px;
+    }
+    .textCards {
+        background-color: var(--Dark-blue);
+        padding: 8px 32px;
+        border-radius: 10px;
+        height: 110px;
+    }
+    #rowOne {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #rowTwo {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    @keyframes dropdown {
+    
+        50%  {max-height: 250px;}
+        100% {max-height: 2000px;}
+    }
 }

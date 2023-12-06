@@ -329,3 +329,237 @@ button {
         100% {max-height: 2000px;}
     }
 }
+@media (width: 425px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        margin: 1rem;
+        animation-name: dropdown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    #sectionProfile {
+        display: grid;
+        grid-template-rows: 135px;
+        background-color: var(--Dark-blue);
+        width: 395px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    #firstPart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+        background-color: var(--Blue);
+        border-radius: 15px;
+        height: 100px;
+    }
+    #profileImage {
+        width: 64px;
+        height: 64px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+    #info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    #report {
+        font-size: 14px;
+        color: var(--Pale-Blue);
+        margin: 0;
+    }
+    #name {
+        color: white;
+        font-size: 24px;
+        margin: 0;
+    }
+    #secondPart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 28px;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-rows: 50px;
+        width: 395px;
+    }
+    .textCards {
+        background-color: var(--Dark-blue);
+        padding: 16px 32px;
+        border-radius: 10px;
+        height: 75px;
+        box-sizing: inherit;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .hours {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .currentTime {
+        color: white;
+        font-size: 32px;
+        margin: 0;
+    }
+    .lastDWM {
+        color: var(--Pale-Blue);
+    }
+    .ATV-BUTTON {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        height: 0;
+        font-size: var(--Font-size);
+        margin-top: 16px;
+    }
+    #rowOne {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #rowTwo {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    @keyframes dropdown {
+        50%  {max-height: 250px;}
+        100% {max-height: 2000px;}
+    }
+}
+@media (width: 320px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        margin: 0.5rem;
+        animation-name: dropdown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    #sectionProfile {
+        display: grid;
+        grid-template-rows: 135px;
+        background-color: var(--Dark-blue);
+        width: 305px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    #firstPart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+        background-color: var(--Blue);
+        border-radius: 15px;
+        height: 100px;
+    }
+    #profileImage {
+        width: 64px;
+        height: 64px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+    #info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    #report {
+        font-size: 14px;
+        color: var(--Pale-Blue);
+        margin: 0;
+    }
+    #name {
+        color: white;
+        font-size: 24px;
+        margin: 0;
+    }
+    #secondPart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 28px;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-rows: 50px;
+        width: 305px;
+    }
+    .textCards {
+        background-color: var(--Dark-blue);
+        padding: 16px 32px;
+        border-radius: 10px;
+        height: 75px;
+        box-sizing: inherit;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .hours {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .currentTime {
+        color: white;
+        font-size: 32px;
+        margin: 0;
+    }
+    .lastDWM {
+        color: var(--Pale-Blue);
+    }
+    .ATV-BUTTON {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        height: 0;
+        font-size: var(--Font-size);
+        margin-top: 16px;
+    }
+    #rowOne {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #rowTwo {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    @keyframes dropdown {
+        50%  {max-height: 250px;}
+        100% {max-height: 2000px;}
+    }
+}

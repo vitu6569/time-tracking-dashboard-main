@@ -44,7 +44,15 @@ fetch('data.json')
                 lastDWMSocial.innerHTML = "Last Day" + " - " +data[4].timeframes.daily.previous + "hrs";
                 /*Day Self Care*/
                 selfCareHours.innerHTML = data[5].timeframes.daily.current + "hrs";
-                lastDWMSelfCare.innerHTML = "Last Day" + " - " +data[5].timeframes.daily.previous + "hrs";      
+                lastDWMSelfCare.innerHTML = "Last Day" + " - " +data[5].timeframes.daily.previous + "hrs"; 
+                
+                if (weekButton.classList.contains("white")) {
+                        weekButton.classList.remove("white")
+                        dayButton.classList.add("white")
+                } else if (monthlyButton.classList.contains("white")) {
+                        monthlyButton.classList.remove("white")
+                        dayButton.classList.add("white")
+                }
         })
         weekButton.addEventListener('click', function(){
         /*Weekly*/      
@@ -66,7 +74,14 @@ fetch('data.json')
                 /*Week Self Care*/
                 selfCareHours.innerHTML = data[5].timeframes.weekly.current + "hrs";
                 lastDWMSelfCare.innerHTML = "Last Week" + " - " +data[5].timeframes.weekly.previous + "hrs";
-
+                                
+                if (dayButton.classList.contains("white")) {
+                        dayButton.classList.remove("white")
+                        weekButton.classList.add("white")
+                } else if (monthlyButton.classList.contains("white")) {
+                        monthlyButton.classList.remove("white")
+                        weekButton.classList.add("white")
+                }
         })
         monthlyButton.addEventListener('click', function(){
         /*Monthly*/        
@@ -88,5 +103,14 @@ fetch('data.json')
                 /*Month Self Care*/
                 selfCareHours.innerHTML = data[5].timeframes.monthly.current + "hrs";
                 lastDWMSelfCare.innerHTML = "Last Month" + " - " +data[5].timeframes.monthly.previous + "hrs";
+
+                if (dayButton.classList.contains("white")) {
+                        dayButton.classList.remove("white")
+                        monthlyButton.classList.add("white")
+                } else if (weekButton.classList.contains("white")) {
+                        weekButton.classList.remove("white")
+                        monthlyButton.classList.add("white")
+                }
         })
+              
     })
